@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title> my calculator </title>
+        <style>
+            .main{background-color:mediumturquoise;width:270px;height:460px;border:2px solid black;}
+            button{  color:black; width:50px;height:50px;  margin: 10px 0; }
+          input{width:265px;height:90px;font-size:200%;}
+      </style>
+</head>
+<body>
+<script>
+    function number(value){
+        document.form1.result.value +=value;
+    }
+    function cle(value){
+        document.form1.result.value =value;
+    }
+    function evalua(){
+      document.form1.result.value = eval(document.form1.result.value);
+    }
+ 
+function cos(form1) {
+     document.form1.result.value = Math.cos(form1.result.value);
+}
+function sin(form1) {
+     document.form1.result.value = Math.sin(form1.result.value);
+}
+function tan(form1) {
+     document.form1.result.value = Math.tan(form1.result.value);
+}
+function log(form1) {
+     document.form1.result.value = Math.log(form1.result.value);
+}
+function sqrt(form1) {
+     document.form1.result.value = Math.sqrt(form1.result.value);
+}
+function exp(form1) {
+     document.form1.result.value = Math.exp(form1.result.value);
+}
+</script>
+
+  <div class="main">
+        <b>CALCULATOR</b>
+      <form name="form1">
+         <input  type="textfield"  name="result"    value=" "/> <br>
+        <button type="button"    onclick=" number(value)" value="1"><b>1</b> </button>
+        <button type="button"    onclick="number(value)" value="2"><b>2</b> </button>
+        <button type="button"   onclick="number(value)" value="3"><b>3</b> </button>
+       <button type="button"   onclick="number(value)" value="+"><b>+</b> </button>
+       <button type="button"  onclick="number(value)" value="-"><b>-</b> </button>  <br>
+        <button type="button"  onclick="number(value)" value="4"><b>4</b> </button>
+        <button type="button"  onclick="number(value)" value="5"><b>5</b> </button>
+        <button type="button"  onclick="number(value)" value="6"><b>6</b> </button>
+       <button type="button"  onclick="number(value)" value="*"><b>*</b> </button>
+       <button type="button"  onclick="number(value)" value="/"><b>/</b> </button><br>
+        <button type="button"  onclick="number(value)" value="7"><b>7</b> </button>
+       <button type="button"  onclick="number(value)" value="8"><b>8</b> </button>
+       <button type="button"  onclick="number(value)" value="9"><b>9</b> </button>
+       <button type="button"  onclick="number(value)" value="%"><b>%</b> </button>
+      <button type="button"  onclick="number(value)" value="^"><b>^</b> </button><br>
+     <button type="button"  onclick="number(value)" value="0"><b>0</b> </button>
+    <button type="button"  onclick="number(value)" value="."><b>.</b> </button>
+   <button type="button"  onclick="exp(form1)" value="exp"><b>EXP</b> </button>
+   <button type="button"  onclick="sin(form1)" value="sin"><b>sin</b> </button>
+  <button type="button"  onclick="cos(form1)" value="cos"><b>cos</b> </button><br>
+  <button type="button" onclick="cle(value)" value=" "><b>DEL</b> </button>
+ <button type="button"  onclick="sqrt(form1)" value="sqrt"><b>SQRT</b> </button>
+<button type="button"  onclick="log(form1)" value="log"><b>log</b> </button>
+<button type="button"  onclick="tan(form1)" value="tan"><b>tan</b> </button>
+<button type="button"  onclick="evalua()" value="="><b>=</b> </button><br><br>
+</form>
+    </div>
+ </body>
+</html>
