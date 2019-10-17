@@ -3,12 +3,31 @@
    <head>
      <title> my calculator </title>
         <style>
-            .main{background-color:mediumturquoise;width:270px;height:460px;border:2px solid black;}
+            .main{background-color:rgb(23, 26, 25);width:270px;height:460px;border:2px solid black;}
             button{  color:black; width:50px;height:50px;  margin: 10px 0; }
           input{width:265px;height:90px;font-size:200%;}
       </style>
 </head>
 <body>
+
+<style>
+	button
+    {
+    	background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px;
+		border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    body
+    {
+		font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+</style>
+
 <script>
     function number(value){
         document.form1.result.value +=value;
@@ -41,9 +60,12 @@ function exp(form1) {
 </script>
 
   <div class="main">
-        <b>CALCULATOR</b>
+        <b style = "color: "red"">CALCULATOR</b>
       <form name="form1">
-         <input  type="textfield"  name="result"    value=" "/> <br>
+         <input  type="textfield"  name="result"    value=" " style = "text-align: right; 
+         background-color:Tomato;
+         
+         "/> <br>
         <button type="button"    onclick=" number(value)" value="1"><b>1</b> </button>
         <button type="button"    onclick="number(value)" value="2"><b>2</b> </button>
         <button type="button"   onclick="number(value)" value="3"><b>3</b> </button>
